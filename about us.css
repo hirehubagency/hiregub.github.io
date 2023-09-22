@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url('hi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: upper;
+    min-height: 30vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 82px;
+    margin: 0;
+    color: #ffffff;
+    align-self: flex-start;
+}
+
+.full-width-line {
+    border: none;
+    border-top: 5px solid #000;
+    margin: 0;
+}
+
+main {
+    background-image: url('aui.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav {
+    display: block;
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #A7A7A7;
+    background-color: #A7A7A7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.section-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.section-container h2,
+.section-container h3,
+.section-container p {
+    margin: 10px 0;
+}
+
+#panels-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.panel {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.panel p {
+    margin: 0 0 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 5px;
+        margin-right: 2px;
+        font-size: 12px;
+    }
+
+    #panels-container {
+        flex-direction: column;
+    }
+
+    .panel {
+        margin: 10px 0;
+    }
+}

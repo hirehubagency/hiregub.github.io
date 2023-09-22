@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background-image: url('bi.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url('hi.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: upper;
+    min-height: 30vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 0;
+    color: #ffffff;
+    align-self: flex-start;
+}
+
+nav {
+    display: block;
+    margin-top: auto;
+}
+
+nav a {
+    display: inline-block;
+    align-items: bottom;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #A7A7A7;
+    background-color: #A7A7A7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 30vh);
+}
+
+.home-image {
+    margin: 0 10px;
+    max-height: 100%;
+    max-width: calc(33.33% - 20px);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 12px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #ffffff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px; /* Adjust font size for smaller screens */
+    }
+    
+    nav a {
+        padding: 8px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    
+    .image-container {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+    
+    .home-image {
+        max-width: 80%; /* Adjust width for smaller screens */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+    
+    .copyright {
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+}
